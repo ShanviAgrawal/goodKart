@@ -1,0 +1,13 @@
+<!-- <img src="{{product.pImage}}" width="200vh"> -->
+ <div class="ekart-product-container">
+
+    <img [src]="product.pImage" width="300px" height="300px">
+    <p>Name  : {{product.name}}</p>
+    <p>Price : {{product. price}}</p>
+    <button [disabled]="!(product.instock > 0)">Buy Now</button>
+    <button (click) = "decrementCartValue()">-</button>
+    <span>{{addToCart}}</span>
+    <button (click) = "incrementCartValue()">+</button>
+ </div>
+
+<!--disabled, hidden, checked-->

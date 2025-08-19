@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  title = 'helllooo';
+  display = false;
 
+  onClick(){
+    this.display = true;
+  }
 }
